@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    background-color: darkslategrey;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    z-index: 0;   
+}
+
+.tarolo {
+    height: 400px;
+    width: 250px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.tarolo.nyit #kupak{
+    animation-name: nyitas;
+}
+
+.tarolo.zar #kupak {
+    animation-name: zaras;
+}
+
+.hatter-kep{
+    position: absolute;
+    z-index: 0;
+}
+
+#kupak{
+    height: 400px;
+    width: 250px;
+    font-weight: 250px;
+    background-image: url(images/bottlecap_10.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    
+
+
+}
+
+.szoveg-tarolo {
+    position: absolute;
+    height:250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    z-index: 1;
+    pos
+}
+
+#szoveg{
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+@keyframes nyitas {
+    0% {
+        background-image: url(./images/bottlecap_0.png);
+    }
+    10% {
+        background-image: url(./images/bottlecap_1.png);
+    }
+    20% {
+        background-image: url(./images/bottlecap_2.png);
+    }
+    30% {
+        background-image: url(./images/bottlecap_3.png);
+    }
+    40% {
+        background-image: url(./images/bottlecap_4.png);
+    }
+    50% {
+        background-image: url(./images/bottlecap_5.png);
+    }
+    60% {
+        background-image: url(./images/bottlecap_6.png);
+    }
+    70% {
+        background-image: url(./images/bottlecap_7.png);
+    }
+    80% {
+        background-image: url(./images/bottlecap_8.png);
+    }
+    90% {
+        background-image: url(./images/bottlecap_9.png);
+    }
+    100% {
+        background-image: url(./images/bottlecap_10.png);
+    }
+}
+
+@keyframes zaras {
+    100% {
+        background-image: url(./images/bottlecap_0.png);
+    }
+    90% {
+        background-image: url(./images/bottlecap_1.png);
+    }
+    80% {
+        background-image: url(./images/bottlecap_2.png);
+    }
+    70% {
+        background-image: url(./images/bottlecap_3.png);
+    }
+    60% {
+        background-image: url(./images/bottlecap_4.png);
+    }
+    50% {
+        background-image: url(./images/bottlecap_5.png);
+    }
+    40% {
+        background-image: url(./images/bottlecap_6.png);
+    }
+    30% {
+        background-image: url(./images/bottlecap_7.png);
+    }
+    20% {
+        background-image: url(./images/bottlecap_8.png);
+    }
+    10% {
+        background-image: url(./images/bottlecap_9.png);
+    }
+    0% {
+        background-image: url(./images/bottlecap_10.png);
+    }
+}

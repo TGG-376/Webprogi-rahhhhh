@@ -1,0 +1,78 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+#characters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.card:hover {
+    transform: scale(105% );
+}
+
+
+.card img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+
+.card-content {
+    padding: 1.5rem;
+}
+
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+
+.card-content p {
+    font-size: 1rem;
+    margin: 0.3rem 0;
+}
+
+
+.card-content span {
+    font-weight: 600;
+}
+
+#characters:hover .card:not(:hover) {
+    filter: blur(1px);
+    transform: scale(90% );
+    filter: contrast(70%);
+}

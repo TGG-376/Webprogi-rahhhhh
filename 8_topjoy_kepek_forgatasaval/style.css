@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background-color: #198754;
+    background-image: url('./images/background.png');
+    background-size: cover;
+}
+
+.tarolo {
+    height: 400px;
+    width: 250px;
+    position: relative;
+}
+
+.hatter-kep {
+    position: absolute;
+}
+
+#kupak {
+    height: 400px;
+    width: 250px;
+}
+
+.szoveg-tarolo {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+#szoveg {
+    text-align: center;
+    overflow-wrap: break-word;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+}
