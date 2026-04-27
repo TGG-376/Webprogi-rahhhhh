@@ -109,7 +109,7 @@ body {
 
 .movie-title {
     position: absolute;
-    bottom: 60px; /* Adjust based on your design */
+    bottom: 60px;
     left: 20px;
     color: white;
     font-size: 2rem;
