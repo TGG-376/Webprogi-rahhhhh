@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeInvázió - Belépés</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="auth-container">
+        <section class="hero">
+            <h1>MemeInvázió</h1>
+            <p>Regisztrálj vagy jelentkezz be a mémek világába.</p>
+        </section>
+
+        <section class="forms-grid">
+
+            <form id="registerForm" class="card">
+                <h2>Regisztráció</h2>
+
+                <label for="regName">Név</label>
+                <input type="text" id="regName" placeholder="Add meg a neved">
+
+                <label for="regEmail">Email</label>
+                <input type="email" id="regEmail" placeholder="pelda@email.hu">
+
+                <label for="regPsw">Jelszó</label>
+                <input type="password" id="regPsw" placeholder="Legalább 6 karakter">
+
+                <button type="button" id="regBtn">Regisztráció</button>
+
+                <div id="registerMessage" class="message"></div>
+            </form>
+
+            <form id="loginForm" class="card">
+                <h2>Bejelentkezés</h2>
+
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" placeholder="pelda@email.hu">
+
+                <label for="loginPsw">Jelszó</label>
+                <input type="password" id="loginPsw" placeholder="Jelszó">
+
+                <button type="button" id="loginBtn">Belépés</button>
+
+                <button type="button" id="testLoginBtn" class="secondary">
+                    Login teszt
+                </button>
+
+                <button type="button" id="logoutBtn" class="danger">
+                    Kijelentkezés
+                </button>
+
+                <div id="loginMessage" class="message"></div>
+            </form>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
